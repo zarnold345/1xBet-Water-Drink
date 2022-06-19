@@ -1,0 +1,75 @@
+name: x_wet
+description: water assistant
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  apphud: 2.1.0
+  webview_flutter: ^2.1.2
+  app_review: 2.1.1+1
+
+  url_launcher: ^6.0.12
+  traffic_router:
+    git:
+      url: https://github.com/MrOlolo/traffic_router
+  flutter_webview_plugin: 0.4.0
+  json_serializable: ^6.1.5
+  firebase_core:
+  flutter_screenutil: ^5.3.1
+  hive: ^2.1.0
+  path_provider: ^2.0.9
+  in_app_review: ^2.0.4
+  hive_generator: ^1.1.2
+  numberpicker: ^2.1.1
+  syncfusion_flutter_gauges: ^20.1.59
+  flutter_svg: ^0.23.0+1
+  flutter_svg_provider: ^0.1.9
+  intl: ^0.17.0
+  flutter:
+    sdk: flutter
+  json_annotation: ^4.4.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # flutter packages pub run build_runner build --delete-conflicting-outputs
+  build_runner: ^2.1.8
+  flutter_gen_runner: ^4.1.6
+  very_good_analysis: ^2.4.0
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: BebasBold
+      fonts:
+        - asset: assets/fonts/BebasNeuePro-Bold.ttf
+    - family: Bebas
+      fonts:
+        - asset: assets/fonts/BebasNeuePro-Regular.ttf
